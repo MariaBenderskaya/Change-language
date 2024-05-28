@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="pageLanguage">
+      <button class="pageLanguage__button" id="changeLang" type="button">
+        Change language
+      </button>
+    </div>
+    <div class="title" id="pageTitle">
+      <h1>Sign Up</h1>
+    </div>
+    <div class="registration">
+      <form>
+        <fieldset class="registration__form">
+          <div class="registration__login">
+            <label for="userName" id="login">Login:</label>
+            <p>
+              <input
+                type="text"
+                required
+                name="login"
+                placeholder="login"
+                size="30"
+                id="userName"
+              />
+            </p>
+          </div>
+          <div class="registration__mail">
+            <label for="userMail" id="mail">E-mail:</label>
+            <p>
+              <input
+                type="email"
+                required
+                name="email"
+                placeholder="e-mail"
+                size="30"
+                id="userMail"
+              />
+            </p>
+          </div>
+          <div class="registration__password">
+            <label for="userPassword" id="password">Password:</label>
+            <p>
+              <input
+                type="password"
+                required
+                name="password"
+                placeholder="password"
+                size="30"
+                maxlength="8"
+                id="userPassword"
+              />
+            </p>
+          </div>
+          <div class="registration__password2">
+            <label for="userPassword2" id="password2"
+              >Re-enter the password:</label
+            >
+            <p>
+              <input
+                type="password"
+                required
+                name="password2"
+                placeholder="re-enter the password"
+                size="30"
+                maxlength="8"
+                id="userPassword2"
+              />
+            </p>
+          </div>
+          <div class="registration__language">
+            <label for="userLanguage" id="selectLanguage"
+              >Language: Select a language:</label
+            >
+            <p class="registration__language registration__language--cheked">
+              <input
+                type="radio"
+                checked
+                name="language"
+                value="ru"
+                id="userLanguage"
+              />
+              <label for="userLanguage" id="russian">Russian language</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="language"
+                value="eng"
+                id="userLanguage2"
+              /><label for="userLanguage" id="english">English language</label>
+            </p>
+          </div>
+          <div class="registration__checkbox">
+            <label for="checkbox" class="checkbox-label">
+              <input type="checkbox" id="checkbox" class="checkbox required" />
+              <span class="checkbox-view">
+                <svg
+                  class="checkbox-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  viewBox="0 0 511.985 511.985"
+                >
+                  <path
+                    fill="#fff"
+                    d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"
+                  />
+                </svg>
+              </span>
+              <label id="checkboxText">Agree with the Terms of Service</label>
+            </label>
+          </div>
+          <div class="registration__buttons">
+            <button
+              class="registration__buttons registration__buttons-submit"
+              type="submit"
+              id="submit"
+            >
+              Register
+            </button>
+            <button
+              class="registration__buttons registration__buttons-reset"
+              type="reset"
+              id="reset"
+            >
+              Reset
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <script
+      async
+      src="https://unpkg.com/i18next@23.10.1/dist/umd/i18next.min.js"
+    ></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
