@@ -1,5 +1,5 @@
-import ru from "./language/ru.js";
-import en from "./language/en.js";
+import ru from "ru.js";
+import en from "en.js";
 
 const btn = document.getElementById("changeLang");
 const output = (err, t) => {
